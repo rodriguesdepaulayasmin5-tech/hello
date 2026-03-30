@@ -1,0 +1,27 @@
+INICIO
+
+// Definição dos papéis
+IA ← aluno
+PROFESSOR ← orientador
+DADOS ← exemplos de desenhos
+
+// Etapa 1: treinamento com dados
+PARA cada desenho EM DADOS FAÇA
+    IA observa desenho
+    IA tenta reproduzir
+FIM PARA
+
+// Etapa 2: correção e aprendizado
+ENQUANTO IA não desenhar corretamente FAÇA
+    PROFESSOR avalia desenho da IA
+    
+    SE houver erro ENTÃO
+        PROFESSOR dá feedback
+        IA ajusta o desenho
+    FIM SE
+FIM ENQUANTO
+
+// Resultado final
+ESCREVER "A IA aprendeu com dados, prática e feedback"
+
+FIM
