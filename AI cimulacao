@@ -1,0 +1,55 @@
+INICIO
+
+// Cliente
+EMPRESA ← "MegaStore"
+ORCAMENTO ← 50000
+
+// Necessidades
+NECESSIDADES ← [
+    "gerar descrições de produtos",
+    "criar imagens de produtos",
+    "chatbot e personalização de e-mails"
+]
+
+// Arquitetura escolhida
+ARQUITETURA ← "HÍBRIDA"
+
+// Modelos utilizados
+MODELO_TEXTO ← "IA de linguagem"
+MODELO_IMAGEM ← "IA de geração de imagens"
+MODELO_CHATBOT ← "IA de atendimento"
+
+// Funcionamento do sistema
+
+FUNÇÃO gerarDescricao(produto)
+    RETORNAR MODELO_TEXTO(produto)
+FIM FUNÇÃO
+
+FUNÇÃO gerarImagem(produto)
+    RETORNAR MODELO_IMAGEM(produto, ambiente)
+FIM FUNÇÃO
+
+FUNÇÃO atenderCliente(pergunta)
+    RESPOSTA ← MODELO_CHATBOT(pergunta)
+    RETORNAR RESPOSTA
+FIM FUNÇÃO
+
+FUNÇÃO enviarEmail(cliente)
+    CONTEUDO ← MODELO_TEXTO(cliente.preferencias)
+    ENVIAR email personalizado
+FIM FUNÇÃO
+
+// Execução
+PARA cada produto FAÇA
+    descricao ← gerarDescricao(produto)
+    imagem ← gerarImagem(produto)
+FIM PARA
+
+ENQUANTO cliente enviar mensagem FAÇA
+    responder ← atenderCliente(mensagem)
+FIM ENQUANTO
+
+// Resultado
+ESCREVER "Sistema híbrido implementado com sucesso"
+
+FIM
